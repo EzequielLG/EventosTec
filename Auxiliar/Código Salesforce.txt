@@ -1,0 +1,30 @@
+<script>
+secondNameWaiter = setInterval(moveSecondName, 1000);
+function moveSecondName() {
+segundoApellido = window.document.body.getElementsByClassName("slds-form-element display-element")[7].parentElement.parentElement.parentElement;
+if (segundoApellido) {
+box = window.document.body.getElementsByClassName("slds-form-element display-element")[1].parentElement.parentElement.parentElement;
+email = window.document.body.getElementsByClassName("slds-form-element display-element")[5].parentElement.parentElement;
+nodoPadre = email.parentElement;
+reference = nodoPadre.lastElementChild;
+nodoPadre.insertBefore(segundoApellido, email);
+segundoApellido.style.padding='0px 12px';
+columns = window.document.body.getElementsByClassName("slds-size_1-of-1 slds-large-size_1-of-2 slds-p-horizontal_small");
+columns[0].classList.remove('slds-large-size_1-of-2');
+columns[1].classList.remove('slds-large-size_1-of-2');
+names = window.document.body.getElementsByClassName("slds-form-element__label helper-margin-right");
+names[0].innerHTML = '<abbr title="required" class="slds-required" aria-label="required" data-aura-rendered-by="856:0">*</abbr>Nombre';
+names[1].innerHTML = '<abbr title="required" class="slds-required" aria-label="required" data-aura-rendered-by="893:0">*</abbr>Primer Apellido';
+clearInterval(secondNameWaiter);
+}
+}
+/*setTimeout(moveSecondName, 12000);
+function moveSecondName() {
+segundoApellido = window.document.body.getElementsByClassName("slds-form-element display-element")[7].parentElement.parentElement.parentElement;
+email = window.document.body.getElementsByClassName("slds-form-element display-element")[5].parentElement.parentElement;
+nodoPadre = email.parentElement;
+reference = nodoPadre.lastElementChild;
+nodoPadre.insertBefore(segundoApellido, email);
+segundoApellido.style.padding='0px 12px';
+}*/
+</script>
