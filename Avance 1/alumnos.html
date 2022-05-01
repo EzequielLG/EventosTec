@@ -10,9 +10,9 @@
     <title> Eventos Tec </title>
 
     <!-- Hojas de estilo -->
-    <link rel = "stylesheet" href = "estiloAlumnos_2.css">
+    <link rel = "stylesheet" href = "estiloAlumnos_4.css">
     <!-- Fin -->
-
+    
   </head>
 
   <body>
@@ -62,39 +62,137 @@
 
             <div id = "opcionesFiltros">
 
-                <div class = "filtro">
-                    <p class = "txtFiltro"> Categoría </p>
-                    <img class = "flechaFiltro" src = "flecha.png">
+                <div class = "opcionFiltro">
+                    <label for = "filtro-1">
+                        <input type = "checkbox" id = "filtro-1"/>
+                        <div class = "filtro">
+                            <p class = "txtFiltro"> Categoría </p>
+                            <img class = "flechaFiltro" src = "flecha.png">
+                        </div>
+                        <div class = "valorFiltro">
+                            <select name = "select">
+                                <option value = "value1" selected>- Selecciona -</option>
+                                <option value = "value2"> LIFE </option>
+                                <option value = "value3"> CVC </option>
+                                <option value = "value4"> Profesional </option>
+                                <option value = "value5"> PrepaTec </option>
+                            </select>
+                        </div>
+                    </label>
                 </div>
 
-                <div class = "filtro">
-                    <p class = "txtFiltro"> Fecha </p>
-                    <img class = "flechaFiltro" src = "flecha.png">
+                <div class = "opcionFiltro">
+                    <label for = "filtro-2">
+                        <input type = "checkbox" id = "filtro-2"/>
+                        <div class = "filtro">
+                            <p class = "txtFiltro"> Fecha </p>
+                            <img class = "flechaFiltro" src = "flecha.png">
+                        </div>
+                        <div class = "valorFiltro">
+                            <input style = "margin-bottom: 10px;"
+                                type = "date"
+                                min = "2010-01-01"
+                                max = "2022-12-31"
+                            >
+                            <input
+                                type = "date"
+                                min = "2010-01-01"
+                                max = "2022-12-31"
+                            >
+                        </div>
+                    </label>
                 </div>
 
-                <div class = "filtro">
-                    <p class = "txtFiltro"> Horario </p>
-                    <img class = "flechaFiltro" src = "flecha.png">
+                <div class = "opcionFiltro">
+                    <label for = "filtro-3">
+                        <input type = "checkbox" id = "filtro-3"/>
+                        <div class = "filtro">
+                            <p class = "txtFiltro"> Horario </p>
+                            <img class = "flechaFiltro" src = "flecha.png">
+                        </div>
+                        <div class = "valorFiltro">
+                            <input
+                                type = "text"
+                                placeholder = "- Desde (00:00) -"
+                                style = "margin-bottom: 10px;"
+                            >
+                            <input
+                                type = "text"
+                                placeholder = "- Hasta (00:00) -"
+                            >
+                        </div>
+                    </label>
                 </div>
 
-                <div class = "filtro">
-                    <p class = "txtFiltro"> Duración </p>
-                    <img class = "flechaFiltro" src = "flecha.png">
+                <div class = "opcionFiltro">
+                    <label for = "filtro-4">
+                        <input type = "checkbox" id = "filtro-4"/>
+                        <div class = "filtro">
+                            <p class = "txtFiltro"> Duración </p>
+                            <img class = "flechaFiltro" src = "flecha.png">
+                        </div>
+                        <div class = "valorFiltro">
+                            <select name = "select">
+                                <option value = "value1" selected>- Selecciona -</option>
+                                <option value = "value2"> 1 hora </option>
+                                <option value = "value3"> 5 horas </option>
+                                <option value = "value4"> 9 días </option>
+                            </select>
+                        </div>
+                    </label>
                 </div>
 
-                <div class = "filtro">
-                    <p class = "txtFiltro"> Capacidad </p>
-                    <img class = "flechaFiltro" src = "flecha.png">
+                <div class = "opcionFiltro">
+                    <label for = "filtro-5">
+                        <input type = "checkbox" id = "filtro-5"/>
+                        <div class = "filtro">
+                            <p class = "txtFiltro"> Capacidad </p>
+                            <img class = "flechaFiltro" src = "flecha.png">
+                        </div>
+                        <div class = "valorFiltro">
+                            <select name = "select">
+                                <option value = "value1" selected>- Selecciona -</option>
+                                <option value = "value2"> 100 personas </option>
+                                <option value = "value3"> 150 personas </option>
+                                <option value = "value4"> 200 personas </option>
+                            </select>
+                        </div>
+                    </label>
                 </div>
 
-                <div class = "filtro">
-                    <p class = "txtFiltro"> Ubicación </p>
-                    <img class = "flechaFiltro" src = "flecha.png">
+                <div class = "opcionFiltro">
+                    <label for = "filtro-6">
+                        <input type = "checkbox" id = "filtro-6"/>
+                        <div class = "filtro">
+                            <p class = "txtFiltro"> Ubicación </p>
+                            <img class = "flechaFiltro" src = "flecha.png">
+                        </div>
+                        <div class = "valorFiltro">
+                            <select name = "select">
+                                <option value = "value1" selected>- Selecciona -</option>
+                                <option value = "value2"> Campus QRO </option>
+                                <option value = "value3"> Campus PUE </option>
+                                <option value = "value4"> Campus MTY </option>
+                            </select>
+                        </div>
+                    </label>
                 </div>
 
-                <div class = "filtro">
-                    <p class = "txtFiltro"> Disponibilidad </p>
-                    <img class = "flechaFiltro" src = "flecha.png">
+                <div class = "opcionFiltro">
+                    <label for = "filtro-7">
+                        <input type = "checkbox" id = "filtro-7"/>
+                        <div class = "filtro">
+                            <p class = "txtFiltro"> Disponibilidad </p>
+                            <img class = "flechaFiltro" src = "flecha.png">
+                        </div>
+                        <div class = "valorFiltro">
+                            <select name = "select">
+                                <option value = "value1" selected>- Selecciona -</option>
+                                <option value = "value2"> Disponible </option>
+                                <option value = "value3"> Limitado </option>
+                            </select>
+                        </div>
+                    </label>
                 </div>
 
             </div>
@@ -103,18 +201,435 @@
 
         <div id = "tarjetas">
 
+            <div class = "tarjeta">
+                <div class = "imagenTarjeta">
+                    <button class = "btnImagenTarjeta">
+                        REGISTRARME
+                    </button>
+                </div>
+                <div class = "footerTarjeta">
+                    <div class = "fechaTarjeta">
+                        <p class = "informacionFecha" style = "font-weight: bold; border-radius: 10px; background-color: #C4C4C4;">
+                            ABR
+                        </p>
+                        <p class = "informacionFecha" style = "font-weight: bold; margin-top: -11px;">
+                            2
+                        </p>
+                        <p class = "informacionFecha" style = "margin-top: -11px;">
+                            2022
+                        </p>
+                    </div>
+                    <div class = "informacionTarjeta">
+                        <p class = "informacionGeneral" style = "font-weight: bold; margin-top: 5px;">
+                            Título 2022
+                        </p>
+                        <p class = "informacionGeneral" style = "margin-top: 25px;">
+                            02:00 pm
+                        </p>
+                        <p class = "informacionGeneral" style = "margin-top: 45px;">
+                            1 hora
+                        </p>
+                        <div class = "statusEvento" style = "background-color: #00CA2C;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "tarjeta">
+                <div class = "imagenTarjeta">
+                    <button class = "btnImagenTarjeta">
+                        REGISTRARME
+                    </button>
+                </div>
+                <div class = "footerTarjeta">
+                    <div class = "fechaTarjeta">
+                        <p class = "informacionFecha" style = "font-weight: bold; border-radius: 10px; background-color: #C4C4C4;">
+                            ABR
+                        </p>
+                        <p class = "informacionFecha" style = "font-weight: bold; margin-top: -11px;">
+                            2
+                        </p>
+                        <p class = "informacionFecha" style = "margin-top: -11px;">
+                            2022
+                        </p>
+                    </div>
+                    <div class = "informacionTarjeta">
+                        <p class = "informacionGeneral" style = "font-weight: bold; margin-top: 5px;">
+                            Título 2022
+                        </p>
+                        <p class = "informacionGeneral" style = "margin-top: 25px;">
+                            02:00 pm
+                        </p>
+                        <p class = "informacionGeneral" style = "margin-top: 45px;">
+                            1 hora
+                        </p>
+                        <div class = "statusEvento" style = "background-color: #EBA900;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "tarjeta">
+                <div class = "imagenTarjeta">
+                    <button class = "btnImagenTarjeta">
+                        REGISTRARME
+                    </button>
+                </div>
+                <div class = "footerTarjeta">
+                    <div class = "fechaTarjeta">
+                        <p class = "informacionFecha" style = "font-weight: bold; border-radius: 10px; background-color: #C4C4C4;">
+                            ABR
+                        </p>
+                        <p class = "informacionFecha" style = "font-weight: bold; margin-top: -11px;">
+                            2
+                        </p>
+                        <p class = "informacionFecha" style = "margin-top: -11px;">
+                            2022
+                        </p>
+                    </div>
+                    <div class = "informacionTarjeta">
+                        <p class = "informacionGeneral" style = "font-weight: bold; margin-top: 5px;">
+                            Título 2022
+                        </p>
+                        <p class = "informacionGeneral" style = "margin-top: 25px;">
+                            02:00 pm
+                        </p>
+                        <p class = "informacionGeneral" style = "margin-top: 45px;">
+                            1 hora
+                        </p>
+                        <div class = "statusEvento" style = "background-color: #00CA2C;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "tarjeta">
+                <div class = "imagenTarjeta">
+                    <button class = "btnImagenTarjeta">
+                        REGISTRARME
+                    </button>
+                </div>
+                <div class = "footerTarjeta">
+                    <div class = "fechaTarjeta">
+                        <p class = "informacionFecha" style = "font-weight: bold; border-radius: 10px; background-color: #C4C4C4;">
+                            ABR
+                        </p>
+                        <p class = "informacionFecha" style = "font-weight: bold; margin-top: -11px;">
+                            2
+                        </p>
+                        <p class = "informacionFecha" style = "margin-top: -11px;">
+                            2022
+                        </p>
+                    </div>
+                    <div class = "informacionTarjeta">
+                        <p class = "informacionGeneral" style = "font-weight: bold; margin-top: 5px;">
+                            Título 2022
+                        </p>
+                        <p class = "informacionGeneral" style = "margin-top: 25px;">
+                            02:00 pm
+                        </p>
+                        <p class = "informacionGeneral" style = "margin-top: 45px;">
+                            1 hora
+                        </p>
+                        <div class = "statusEvento" style = "background-color: #00CA2C;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class = "tarjeta">
+                <div class = "imagenTarjeta">
+                    <button class = "btnImagenTarjeta">
+                        REGISTRARME
+                    </button>
+                </div>
+                <div class = "footerTarjeta">
+                    <div class = "fechaTarjeta">
+                        <p class = "informacionFecha" style = "font-weight: bold; border-radius: 10px; background-color: #C4C4C4;">
+                            ABR
+                        </p>
+                        <p class = "informacionFecha" style = "font-weight: bold; margin-top: -11px;">
+                            2
+                        </p>
+                        <p class = "informacionFecha" style = "margin-top: -11px;">
+                            2022
+                        </p>
+                    </div>
+                    <div class = "informacionTarjeta">
+                        <p class = "informacionGeneral" style = "font-weight: bold; margin-top: 5px;">
+                            Título 2022
+                        </p>
+                        <p class = "informacionGeneral" style = "margin-top: 25px;">
+                            02:00 pm
+                        </p>
+                        <p class = "informacionGeneral" style = "margin-top: 45px;">
+                            1 hora
+                        </p>
+                        <div class = "statusEvento" style = "background-color: #00CA2C;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "tarjeta">
+                <div class = "imagenTarjeta">
+                    <button class = "btnImagenTarjeta">
+                        REGISTRARME
+                    </button>
+                </div>
+                <div class = "footerTarjeta">
+                    <div class = "fechaTarjeta">
+                        <p class = "informacionFecha" style = "font-weight: bold; border-radius: 10px; background-color: #C4C4C4;">
+                            ABR
+                        </p>
+                        <p class = "informacionFecha" style = "font-weight: bold; margin-top: -11px;">
+                            2
+                        </p>
+                        <p class = "informacionFecha" style = "margin-top: -11px;">
+                            2022
+                        </p>
+                    </div>
+                    <div class = "informacionTarjeta">
+                        <p class = "informacionGeneral" style = "font-weight: bold; margin-top: 5px;">
+                            Título 2022
+                        </p>
+                        <p class = "informacionGeneral" style = "margin-top: 25px;">
+                            02:00 pm
+                        </p>
+                        <p class = "informacionGeneral" style = "margin-top: 45px;">
+                            1 hora
+                        </p>
+                        <div class = "statusEvento" style = "background-color: #00CA2C;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "tarjeta">
+                <div class = "imagenTarjeta">
+                    <button class = "btnImagenTarjeta">
+                        REGISTRARME
+                    </button>
+                </div>
+                <div class = "footerTarjeta">
+                    <div class = "fechaTarjeta">
+                        <p class = "informacionFecha" style = "font-weight: bold; border-radius: 10px; background-color: #C4C4C4;">
+                            ABR
+                        </p>
+                        <p class = "informacionFecha" style = "font-weight: bold; margin-top: -11px;">
+                            2
+                        </p>
+                        <p class = "informacionFecha" style = "margin-top: -11px;">
+                            2022
+                        </p>
+                    </div>
+                    <div class = "informacionTarjeta">
+                        <p class = "informacionGeneral" style = "font-weight: bold; margin-top: 5px;">
+                            Título 2022
+                        </p>
+                        <p class = "informacionGeneral" style = "margin-top: 25px;">
+                            02:00 pm
+                        </p>
+                        <p class = "informacionGeneral" style = "margin-top: 45px;">
+                            1 hora
+                        </p>
+                        <div class = "statusEvento" style = "background-color: #EBA900;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "tarjeta">
+                <div class = "imagenTarjeta">
+                    <button class = "btnImagenTarjeta">
+                        REGISTRARME
+                    </button>
+                </div>
+                <div class = "footerTarjeta">
+                    <div class = "fechaTarjeta">
+                        <p class = "informacionFecha" style = "font-weight: bold; border-radius: 10px; background-color: #C4C4C4;">
+                            ABR
+                        </p>
+                        <p class = "informacionFecha" style = "font-weight: bold; margin-top: -11px;">
+                            2
+                        </p>
+                        <p class = "informacionFecha" style = "margin-top: -11px;">
+                            2022
+                        </p>
+                    </div>
+                    <div class = "informacionTarjeta">
+                        <p class = "informacionGeneral" style = "font-weight: bold; margin-top: 5px;">
+                            Título 2022
+                        </p>
+                        <p class = "informacionGeneral" style = "margin-top: 25px;">
+                            02:00 pm
+                        </p>
+                        <p class = "informacionGeneral" style = "margin-top: 45px;">
+                            1 hora
+                        </p>
+                        <div class = "statusEvento" style = "background-color: #00CA2C;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "tarjeta">
+                <div class = "imagenTarjeta">
+                    <button class = "btnImagenTarjeta">
+                        REGISTRARME
+                    </button>
+                </div>
+                <div class = "footerTarjeta">
+                    <div class = "fechaTarjeta">
+                        <p class = "informacionFecha" style = "font-weight: bold; border-radius: 10px; background-color: #C4C4C4;">
+                            ABR
+                        </p>
+                        <p class = "informacionFecha" style = "font-weight: bold; margin-top: -11px;">
+                            2
+                        </p>
+                        <p class = "informacionFecha" style = "margin-top: -11px;">
+                            2022
+                        </p>
+                    </div>
+                    <div class = "informacionTarjeta">
+                        <p class = "informacionGeneral" style = "font-weight: bold; margin-top: 5px;">
+                            Título 2022
+                        </p>
+                        <p class = "informacionGeneral" style = "margin-top: 25px;">
+                            02:00 pm
+                        </p>
+                        <p class = "informacionGeneral" style = "margin-top: 45px;">
+                            1 hora
+                        </p>
+                        <div class = "statusEvento" style = "background-color: #EBA900;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "tarjeta">
+                <div class = "imagenTarjeta">
+                    <button class = "btnImagenTarjeta">
+                        REGISTRARME
+                    </button>
+                </div>
+                <div class = "footerTarjeta">
+                    <div class = "fechaTarjeta">
+                        <p class = "informacionFecha" style = "font-weight: bold; border-radius: 10px; background-color: #C4C4C4;">
+                            ABR
+                        </p>
+                        <p class = "informacionFecha" style = "font-weight: bold; margin-top: -11px;">
+                            2
+                        </p>
+                        <p class = "informacionFecha" style = "margin-top: -11px;">
+                            2022
+                        </p>
+                    </div>
+                    <div class = "informacionTarjeta">
+                        <p class = "informacionGeneral" style = "font-weight: bold; margin-top: 5px;">
+                            Título 2022
+                        </p>
+                        <p class = "informacionGeneral" style = "margin-top: 25px;">
+                            02:00 pm
+                        </p>
+                        <p class = "informacionGeneral" style = "margin-top: 45px;">
+                            1 hora
+                        </p>
+                        <div class = "statusEvento" style = "background-color: #00CA2C;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "tarjeta">
+                <div class = "imagenTarjeta">
+                    <button class = "btnImagenTarjeta">
+                        REGISTRARME
+                    </button>
+                </div>
+                <div class = "footerTarjeta">
+                    <div class = "fechaTarjeta">
+                        <p class = "informacionFecha" style = "font-weight: bold; border-radius: 10px; background-color: #C4C4C4;">
+                            ABR
+                        </p>
+                        <p class = "informacionFecha" style = "font-weight: bold; margin-top: -11px;">
+                            2
+                        </p>
+                        <p class = "informacionFecha" style = "margin-top: -11px;">
+                            2022
+                        </p>
+                    </div>
+                    <div class = "informacionTarjeta">
+                        <p class = "informacionGeneral" style = "font-weight: bold; margin-top: 5px;">
+                            Título 2022
+                        </p>
+                        <p class = "informacionGeneral" style = "margin-top: 25px;">
+                            02:00 pm
+                        </p>
+                        <p class = "informacionGeneral" style = "margin-top: 45px;">
+                            1 hora
+                        </p>
+                        <div class = "statusEvento" style = "background-color: #00CA2C;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "tarjeta">
+                <div class = "imagenTarjeta">
+                    <button class = "btnImagenTarjeta">
+                        REGISTRARME
+                    </button>
+                </div>
+                <div class = "footerTarjeta">
+                    <div class = "fechaTarjeta">
+                        <p class = "informacionFecha" style = "font-weight: bold; border-radius: 10px; background-color: #C4C4C4;">
+                            ABR
+                        </p>
+                        <p class = "informacionFecha" style = "font-weight: bold; margin-top: -11px;">
+                            2
+                        </p>
+                        <p class = "informacionFecha" style = "margin-top: -11px;">
+                            2022
+                        </p>
+                    </div>
+                    <div class = "informacionTarjeta">
+                        <p class = "informacionGeneral" style = "font-weight: bold; margin-top: 5px;">
+                            Título 2022
+                        </p>
+                        <p class = "informacionGeneral" style = "margin-top: 25px;">
+                            02:00 pm
+                        </p>
+                        <p class = "informacionGeneral" style = "margin-top: 45px;">
+                            1 hora
+                        </p>
+                        <div class = "statusEvento" style = "background-color: #00CA2C;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "numeracionPagina">
+                <img src = "flechaIzquierda.png" class = "flechaNumeracion">
+                <p class = "numeroPagina" style = "background-color: #000000; color: #FFFFFF;"> 1 </p>
+                <p class = "numeroPagina"> 2 </p>
+                <img src = "flechaDerecha.png" class = "flechaNumeracion">
+            </div>
+
         </div>
 
     </div>
 
     <div id = "footer">
 
-        <div id = "subir">
-            <div id = "opcionSubir">
-                <img id = "imgSubir" src = "imgSubir.png">
-                <p id = "txtSubir"> Subir </p>
+        <a href = "#header">
+            <div id = "subir">
+                <div id = "opcionSubir">
+                    <img id = "imgSubir" src = "imgSubir.png">
+                    <p id = "txtSubir"> Subir </p>
+                </div>
             </div>
-        </div>
+        </a>
 
         <div id = "leyendaFooter">
             <p id = "txtFooter"> <b> LIBERA TU POTENCIAL </b> <br> TRANSFORMADOR </p>
@@ -123,10 +638,11 @@
         <div id = "informacionFooter">
             <div id = "opcionesFooter">
                 <p class = "txtFooter"> <b> Síguenos </b> </p>
-                <img class = "imgRedSocial" src = "facebook.png">
-                <img class = "imgRedSocial" src = "twitter.png">
-                <img class = "imgRedSocial" src = "instagram.png">
-                <p class = "txtFooter" > Contáctanos <br> Tec.mx </p>
+                <img onclick = 'javascript: window.open("https://www.facebook.com", "_self");' class = "imgRedSocial" src = "facebook.png">
+                <img onclick = 'javascript: window.open("https://www.twitter.com", "_self");' class = "imgRedSocial" src = "twitter.png">
+                <img onclick = 'javascript: window.open("https://www.instagram.com", "_self");' class = "imgRedSocial" src = "instagram.png">
+                <p class = "txtFooter"> Contáctanos </p>
+                <p onclick = 'javascript: window.open("https://www.tec.mx", "_self");' class = "txtFooter" style = "cursor: pointer; margin-top: -15px;" > Tec.mx </p>
             </div>
         </div>
 

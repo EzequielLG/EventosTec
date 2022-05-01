@@ -111,6 +111,10 @@ body{
     box-shadow: 0px 0px 7px 2px #FFFFFF;
 }
 
+#login:hover{
+    box-shadow: 0px 0px 7px 2px #1beb00;
+}
+
 #imgLogin{
     display: block;
     margin-left: auto;
@@ -129,9 +133,10 @@ body{
 }
 
 #filtros{
+    float: left;
     padding-top: 15px;
     width: 25%;
-    height: 900px;
+    height: 1030px;
 }
 
 #headerFiltros{
@@ -157,6 +162,7 @@ body{
 #opcionesFiltros{
     margin-top: 10px;
     width: 90%;
+    height: 91%;
     padding-top: 5px;
     padding-bottom: 15px;
     margin-left: auto;
@@ -166,16 +172,21 @@ body{
     background-color: #212121;
 }
 
+.opcionFiltro{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    width: 92%;
+}
+
 .filtro{
     cursor: pointer;
     position: relative;
     height: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 92%;
+    width: 100%;
     margin-top: 10px;
     border-radius: 15px;
-    background-color: #FFFFFF;
 }
 
 .txtFiltro{
@@ -192,16 +203,190 @@ body{
     display: inline;
 }
 
-#tarjetas{
+input[type = checkbox]{
+    display: none;
+}
+
+input[type = checkbox]:checked ~ .valorFiltro{
+    display: block;
+}
+
+.valorFiltro{
+    display: none;
+    position: relative;
+    margin-top: -12px;
     padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+}
+
+.valorFiltro input{
+    width: 81.5%;
+    height: 28px;
+    text-align: center;
+    border-radius: 20px;
+    border: solid 3px #000000;
+    background-color: #C4C4C4;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Montserrat", Sans-serif;
+}
+
+.valorFiltro select{
+    width: 85%;
+    height: 35px;
+    text-align: center;
+    border-radius: 20px;
+    border: solid 3px #000000;
+    background-color: #C4C4C4;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Montserrat", Sans-serif;
+}
+
+.valorFiltro select option{
+    box-shadow: 0px 0px 7px 2px #FFFFFF;
+}
+
+/* Tarjetas */
+
+#tarjetas{
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 15px;
     width: 75%;
-    height: 900px;
-    margin-top: -915px;
+    margin-top: -1045px;
     margin-left: 25%;
-    background-color: blue;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tarjeta{
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    width: 21%;
+    height: 290px;
+    margin-bottom: 20px;
+}
+
+.imagenTarjeta{
+    border-radius: 15px;
+    width: 100%;
+    height: 73%;
+    display: flex;
+    align-items: center;
+    border: 2px solid #C4C4C4;
+    background-color: #FFFFFF;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    background-image: url(imagenTarjeta.png);
+}
+
+.btnImagenTarjeta{
+    margin-left: auto;
+    margin-right: auto;
+    opacity: .8;
+    color: #FFFFFF;
+    padding-left: 10px;
+    padding-top: 15px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: "Montserrat", Sans-serif;
+    background-color: #212121;
+}
+
+.btnImagenTarjeta:hover{
+    background-color: #eb0076;
+}
+
+.footerTarjeta{
+    position: relative;
+    border-radius: 15px;
+    margin-top: 4px;
+    width: 100%;
+    height: 24%;
+}
+
+.fechaTarjeta{
+    position: absolute;
+    width: 33%;
+    height: 100%;
+    text-align: center;
+    border-radius: 15px;
+    border: 2px solid #C4C4C4;
+    background-color: #FFFFFF;
+}
+
+.informacionFecha{
+    margin-top: 0px;
+}
+
+.informacionTarjeta{
+    margin-left: 36.5%;
+    position: relative;
+    width: 63%;
+    height: 100%;
+    border-radius: 15px;
+    border: 2px solid #C4C4C4;
+    background-color: #FFFFFF;
+}
+
+.informacionGeneral{
+    position: absolute;
+    margin-left: 7px;
+}
+
+.statusEvento{
+    top: 1px;
+    right: -2px;
+    position: absolute;
+    height: 99%;
+    border-radius: 20px;
+    width: 13%;
+}
+
+/* Fin */
+
+.numeracionPagina{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flechaNumeracion{
+    margin-left: 5px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-color: #FFFFFF;
+}
+
+.numeroPagina{
+    margin-left: 5px;
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    padding-top: 5px;
+    border-radius: 20px;
+    text-align: center;
+    border: solid 2px #000000;
+    background-color: #FFFFFF;
+}
+
+.numeroPagina:hover{
+    background-color: #000000;
+    color: #FFFFFF;
 }
 
 #footer{
+    float: left;
     background-color: #212121;
     width: 100%;
     height: 200px;
