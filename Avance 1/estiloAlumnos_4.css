@@ -12,6 +12,8 @@ body{
 
 }
 
+/* Header */
+
 #header{
     width: 100%;
     height: 300px;
@@ -128,9 +130,15 @@ body{
     margin-top: -5px;
 }
 
+/* Fin */
+
+/* Body */
+
 #eventos{
     width: 100%;
 }
+
+/* Filtros */
 
 #filtros{
     float: left;
@@ -248,6 +256,8 @@ input[type = checkbox]:checked ~ .valorFiltro{
     box-shadow: 0px 0px 7px 2px #FFFFFF;
 }
 
+/* Fin */
+
 /* Tarjetas */
 
 #tarjetas{
@@ -352,6 +362,8 @@ input[type = checkbox]:checked ~ .valorFiltro{
 
 /* Fin */
 
+/* Numeración de página */
+
 .numeracionPagina{
     width: 100%;
     height: 80px;
@@ -384,6 +396,12 @@ input[type = checkbox]:checked ~ .valorFiltro{
     background-color: #000000;
     color: #FFFFFF;
 }
+
+/* Fin */
+
+/* Fin */
+
+/* Footer */
 
 #footer{
     float: left;
@@ -466,3 +484,242 @@ input[type = checkbox]:checked ~ .valorFiltro{
     cursor: pointer;
     margin-left: 5px;
 }
+
+/* Fin */
+
+/* RESPONSIVE 985 px */
+
+@media screen and (max-width: 1115px){
+    
+    /* Filtros */
+
+    #filtros{
+        width: 20%;
+    }
+
+    /* Fin */
+
+    /* Tarjetas */
+
+    #tarjetas{
+        width: 80%;
+        margin-left: 20%;
+    }
+
+    /* Fin */
+
+}
+
+/* Fin */
+
+/* RESPONSIVE 1050 px */
+
+@media screen and (max-width: 1050px){
+
+    .valorFiltro select, .valorFiltro select option, .valorFiltro input{
+        font-size: 13px;
+    }
+    
+    /* Filtros */
+
+    #filtros{
+        width: 185px;
+    }
+
+    /* Fin */
+
+    /* Tarjetas */
+
+    #tarjetas{
+        width: fit-content;
+        padding-left: 5px;
+        padding-right: 15px;
+        margin-left: 185px;
+    }
+
+    .tarjeta{
+        width: 180px;
+        height: 270px;
+    }
+
+    /* Fin */
+
+}
+
+/* Fin */
+
+/* RESPONSIVE 696 px */
+
+@media screen and (max-width: 696px){
+    
+    /* Footer */
+
+    #subir{
+        width: 10%;
+    }
+
+    #leyendaFooter{
+        width: 65%;
+    }
+
+    #txtFooter{
+        font-size: 30px;
+    }
+
+    #informacionFooter{
+        width: 25%;
+        margin-left: 75%;
+    }
+
+    /* Fin */
+
+}
+
+/* Fin */
+
+/* RESPONSIVE 500 px */
+
+@media screen and (max-width: 500px){
+    
+    /* Footer */
+
+    #subir{
+        width: 15%;
+    }
+
+    #leyendaFooter{
+        width: 55%;
+        margin-left: 15%;
+    }
+
+    #txtFooter{
+        font-size: 20px;
+    }
+
+    #informacionFooter{
+        width: 30%;
+        margin-left: 70%;
+    }
+
+    /* Fin */
+
+}
+
+/* Fin */
+
+/* RESPONSIVE 430 px */
+
+@media screen and (max-width: 430px){
+    
+    /* Header */
+
+    #informacionHeader{
+        margin-top: -25px;
+    }
+    
+    #tituloHeader{
+        font-size: 35px;
+    }
+    
+    #subtituloHeader{
+        margin-top: -40px;
+        font-size: 25px;
+    }
+    
+    #barraBusqueda{
+        margin-top: -20px;
+        width: 300px;
+    }
+    
+    #inputBusqueda{
+        width: 80%;
+    }
+
+    /* Fin */
+
+}
+
+/* Fin */
+
+/* RESPONSIVE 401 px */
+
+@media screen and (max-width: 401px){
+    
+    /* Tarjetas */
+
+    .valorFiltro select, .valorFiltro select option, .valorFiltro input{
+        font-size: 12px;
+    }
+    
+    /* Filtros */
+
+    #filtros{
+        width: 160px;
+    }
+
+    /* Fin */
+
+    #tarjetas{
+        padding-left: 0px;
+        padding-right: 5px;
+        margin-left: 160px;
+    }
+
+    .tarjeta{
+        width: 150px;
+        height: 250px;
+    }
+
+    .informacionFecha{
+        font-size: 14px;
+    }
+
+    .informacionGeneral{
+        font-size: 13px;
+    }
+
+    /* Fin */
+
+    /* Fin */
+
+    /* Footer */
+
+    #txtFooter{
+        font-size: 16px;
+    }
+
+    /* Fin */
+
+}
+
+/* Fin */
+
+/* RESPONSIVE 370 px */
+
+@media screen and (max-width: 370px){
+
+    /* Footer */
+
+    #subir{
+        width: 15%;
+    }
+
+    #leyendaFooter{
+        width: 45%;
+        margin-left: 15%;
+    }
+
+    #txtFooter{
+        font-size: 13px;
+    }
+
+    #informacionFooter{
+        width: 40%;
+        margin-left: 60%;
+    }
+
+    /* Fin */
+
+}
+
+/* Fin */
