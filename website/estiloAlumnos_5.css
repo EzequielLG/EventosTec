@@ -140,10 +140,38 @@ body{
 
 /* Filtros */
 
+#headerFiltros{
+    cursor: pointer;
+}
+
+/* Show and hide panel */
+
+#menuFiltros:checked ~ #filtros{
+    width: 100%;
+    height: fit-content;
+    float: none;
+}
+
+#menuFiltros:checked ~ #filtros #headerFiltros{
+    width: 97.8%;
+}
+
+#menuFiltros:checked ~ #filtros #opcionesFiltros{
+    display: none;
+}
+
+#menuFiltros:checked ~ #tarjetas{
+    margin-left: 0px;
+    margin-top: 0px;
+    float: none;
+}
+
+/* Fin */
+
 #filtros{
     float: left;
     padding-top: 15px;
-    width: 25%;
+    width: 300px;
     height: 1030px;
 }
 
@@ -262,11 +290,13 @@ input[type = checkbox]:checked ~ .valorFiltro{
 
 #tarjetas{
     float: left;
+    padding-left: 5px;
+    padding-right: 15px;
     padding-top: 20px;
     padding-bottom: 15px;
-    width: 75%;
+    width: fit-content;
     margin-top: -1045px;
-    margin-left: 25%;
+    margin-left: 300px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -275,8 +305,8 @@ input[type = checkbox]:checked ~ .valorFiltro{
     margin-left: auto;
     margin-right: auto;
     border-radius: 15px;
-    width: 21%;
-    height: 290px;
+    width: 210px;
+    height: 300px;
     margin-bottom: 20px;
 }
 
@@ -487,31 +517,6 @@ input[type = checkbox]:checked ~ .valorFiltro{
 
 /* Fin */
 
-/* RESPONSIVE 985 px */
-
-@media screen and (max-width: 1115px){
-    
-    /* Filtros */
-
-    #filtros{
-        width: 20%;
-    }
-
-    /* Fin */
-
-    /* Tarjetas */
-
-    #tarjetas{
-        width: 80%;
-        margin-left: 20%;
-    }
-
-    /* Fin */
-
-}
-
-/* Fin */
-
 /* RESPONSIVE 1050 px */
 
 @media screen and (max-width: 1050px){
@@ -531,9 +536,6 @@ input[type = checkbox]:checked ~ .valorFiltro{
     /* Tarjetas */
 
     #tarjetas{
-        width: fit-content;
-        padding-left: 5px;
-        padding-right: 15px;
         margin-left: 185px;
     }
 
