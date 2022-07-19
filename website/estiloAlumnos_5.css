@@ -515,6 +515,25 @@ input[type = checkbox]:checked ~ .valorFiltro{
     margin-left: 5px;
 }
 
+#politicas-privacidad{
+    float: left;
+    width: 100%;
+    height: 120px;
+    font-size: 11px;
+    color: #FFFFFF;
+    text-align: center;
+    background-color: #212121;
+}
+
+#hrFooter{
+    color: #FFFFFF;
+}
+
+#politicas-privacidad a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
 /* Fin */
 
 /* RESPONSIVE 1050 px */
