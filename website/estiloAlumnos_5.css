@@ -592,6 +592,10 @@ input[type = checkbox]:checked ~ .valorFiltro{
         margin-left: 75%;
     }
 
+    #politicas-privacidad{
+        height: 140px;
+    }
+
     /* Fin */
 
 }
@@ -620,6 +624,10 @@ input[type = checkbox]:checked ~ .valorFiltro{
     #informacionFooter{
         width: 30%;
         margin-left: 70%;
+    }
+
+    #politicas-privacidad{
+        height: 160px;
     }
 
     /* Fin */
@@ -737,6 +745,10 @@ input[type = checkbox]:checked ~ .valorFiltro{
     #informacionFooter{
         width: 40%;
         margin-left: 60%;
+    }
+
+    #politicas-privacidad{
+        height: 170px;
     }
 
     /* Fin */
